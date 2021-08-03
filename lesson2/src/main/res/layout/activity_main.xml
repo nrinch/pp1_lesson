@@ -1,18 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/am_left_guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/small_margin" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/am_right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/small_margin" />
+
+    <TextView
+        android:background="@drawable/rounded_rectangle"
+        android:id="@+id/am_title"
+        android:padding="@dimen/small_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_button_height"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:text="@string/hello_my_friends"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/am_image_bobr"
+        app:layout_constraintLeft_toLeftOf="@id/am_left_guideline"
         app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/am_image_bobr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bobr"
+        app:layout_constraintLeft_toLeftOf="@id/am_left_guideline"
+        app:layout_constraintRight_toRightOf="@id/am_right_guideline"
+        app:layout_constraintTop_toBottomOf="@id/am_title"
+        app:layout_constraintBottom_toTopOf="@id/am_button_press_me"/>
+
+    <Button
+        android:id="@+id/am_button_press_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:text="@string/press_me"
+        app:layout_constraintTop_toBottomOf="@id/am_image_bobr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+    <!-->
+    size - dimens = dp/sp
+    text - string = string ""
+
+    id - identificators = "@+id/name_identificators"
+
+    </-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

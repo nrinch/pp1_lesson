@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:gravity="center"
+    android:paddingHorizontal="@dimen/small_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/am_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_button_height"
+        android:gravity="center"
+        android:text="@string/hello_my_friends" />
+
+    <ImageView
+        android:id="@+id/am_image_bobr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bobr" />
+
+    <Button
+        android:id="@+id/am_button_press_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:text="@string/press_me" />
+</LinearLayout>

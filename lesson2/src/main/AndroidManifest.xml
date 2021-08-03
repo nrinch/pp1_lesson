@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pp1">
         <activity
+            android:name=".SecondImplCalculatorActivity"
+            android:exported="true" />
+        <activity android:name=".CalculatorActivity" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

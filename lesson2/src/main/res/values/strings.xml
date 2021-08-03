@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">IbaLesson2</string>
+    <string name="hello_my_friends">Hello my friends!</string>
+    <string name="press_me">Press me!</string>
+
+    <string name="clicked">"You are clicked me."</string>
+    <string name="text_button_clear">C</string>
+    <string name="first_calc">First Calc</string>
 </resources>

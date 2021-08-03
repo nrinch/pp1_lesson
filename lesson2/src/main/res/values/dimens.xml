@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="large_button_height">96dp</dimen>
+    <dimen name="semi_large_button_height">64dp</dimen>
+    <dimen name="default_button_height">32dp</dimen>
+    <dimen name="semi_small_button_height">16dp</dimen>
+    <dimen name="small_button_height">8dp</dimen>
+    <dimen name="default_text_size">16sp</dimen>
+    <dimen name="small_margin">16dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+
+
+    <dimen name="semi_small_padding">16dp</dimen>
+    <dimen name="medium_padding">32dp</dimen>
+    <dimen name="semi_large_padding">64dp</dimen>
+    <dimen name="calc_output_height_text_view">120dp</dimen>
+    <dimen name="large_text_size">48sp</dimen>
+    <dimen name="button_clear_size">96dp</dimen>
+</resources>
