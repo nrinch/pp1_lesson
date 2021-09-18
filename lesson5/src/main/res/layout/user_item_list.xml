@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp140"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/dp16"
+    android:elevation="@dimen/dp16"
+    app:cardBackgroundColor="@color/purple_200"
+    app:cardCornerRadius="@dimen/dp16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp16"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/uil_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            tools:text= "John"/>
+        <TextView
+            android:id="@+id/uil_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            tools:text= "Lenin street 24-108"/>
+
+        <TextView
+            android:id="@+id/uil_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            tools:text="42 y.o." />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lesson5</string>
+    <string name="increment_counter">Increment</string>
+    <string name="counter_template">Current value %1$d</string>
+</resources>
